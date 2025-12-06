@@ -7,6 +7,10 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // NOVO NÚMERO DO WHATSAPP (Apenas um lugar para facilitar futuras mudanças)
+  const whatsappNumber = "5531984831070"; 
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.`;
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -62,18 +66,20 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+5531984831070" className={`flex items-center gap-2 text-sm font-medium transition-colors ${
+            {/* MODIFICADO: Agora usa o link do WhatsApp (wa.me) */}
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className={`flex items-center gap-2 text-sm font-medium transition-colors ${
               isScrolled ? "text-foreground" : "text-background"
             }`}>
               <Phone className="w-4 h-4" />
               (31) 98483-1070
             </a>
+            {/* MODIFICADO: O botão "Agende sua Consulta" agora aponta para o WhatsApp */}
             <Button
               variant={isScrolled ? "default" : "hero"}
               size="lg"
               asChild
             >
-              <a href="#agendar">Agende sua Consulta</a>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Agende sua Consulta</a>
             </Button>
           </div>
 
@@ -102,8 +108,9 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
+              {/* MODIFICADO: O botão do Menu Mobile agora aponta para o WhatsApp */}
               <Button variant="default" size="lg" className="mt-4" asChild>
-                <a href="#agendar">Agende sua Consulta</a>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Agende sua Consulta</a>
               </Button>
             </nav>
           </div>
