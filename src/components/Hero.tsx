@@ -1,23 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import heroBackground from "@/assets/hero-background.png";
 
 const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-background rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-background rounded-full blur-3xl" />
-      </div>
-
-      {/* Large Typography Background */}
-      <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-        <h1 className="font-display text-[15vw] md:text-[20vw] font-bold text-background/10 tracking-tighter select-none">
-          ACCESS
-        </h1>
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroBackground}
+          alt="Access Fisioterapia"
+          className="w-full h-full object-cover"
+        />
       </div>
 
       {/* Content */}
