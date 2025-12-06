@@ -8,20 +8,18 @@ const Services = () => {
     highlight: false
   }, {
     icon: Activity,
-    title: "Sessão de Fisioterapia",
+    title: "Atendimento de Fisioterapia",
     description: "Tratamentos individualizados utilizando técnicas baseadas em evidências científicas.",
-    price: "A partir de R$ 180",
     highlight: true
   }, {
     icon: Footprints,
-    title: "Palmilhas Ortopédicas",
-    description: "Avaliação biomecânica e confecção de palmilhas personalizadas para correção postural.",
-    price: "R$ 300",
+    title: "Palmilhas sob Medida",
+    description: "Avaliação biomecânica detalhada para confecção de palmilhas personalizadas para correção do movimento.",
     highlight: false
   }, {
     icon: Dumbbell,
-    title: "Medicina Esportiva",
-    description: "Atendimento especializado para atletas e praticantes de atividades físicas.",
+    title: "Recovery",
+    description: "Atendimento especializado para atletas e praticantes de atividades físicas com liberação miofascial e bota de recovery.",
     highlight: false
   }, {
     icon: Brain,
@@ -64,7 +62,7 @@ const Services = () => {
                 {service.description}
               </p>
 
-              {service.price}
+              
 
               {/* Decorative Element */}
               <div className={`absolute top-4 right-4 w-20 h-20 rounded-full opacity-10 ${service.highlight ? "bg-background" : "bg-primary"}`} />
