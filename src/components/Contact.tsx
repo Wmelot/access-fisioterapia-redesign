@@ -50,10 +50,10 @@ const Contact = () => {
                       Telefone / WhatsApp
                     </h4>
                     <a
-                      href="tel:+5531984831070"
+                      href="tel:+5531998483170"
                       className="text-primary hover:underline"
                     >
-                      (31) 98483-1070
+                      (31) 99848-31070
                     </a>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                     <Instagram className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://wa.me/5531984831070"
+                    href="https://wa.me/5531998483170"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-xl bg-green-500 flex items-center justify-center text-primary-foreground hover:bg-green-600 transition-colors"
@@ -109,7 +109,7 @@ const Contact = () => {
               asChild
             >
               <a
-                href="https://wa.me/5531984831070"
+                href="https://wa.me/5531998483170"
                 target="_blank"
                 rel="noopener noreferrer"
               >
