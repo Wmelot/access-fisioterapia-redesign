@@ -1,25 +1,33 @@
 import { Target, Eye, Heart, Award, Users, Sparkles } from "lucide-react";
 import clinicInterior from "@/assets/clinic-interior.jpg";
-
 const About = () => {
-  const values = [
-    { icon: Heart, label: "Ética" },
-    { icon: Award, label: "Prática baseada em evidências" },
-    { icon: Users, label: "Qualidade no atendimento" },
-    { icon: Target, label: "Transparência nos resultados" },
-    { icon: Sparkles, label: "Inovação" },
-    { icon: Eye, label: "Resolutividade" },
-  ];
-
-  return (
-    <section id="sobre" className="py-24 bg-gradient-subtle">
+  const values = [{
+    icon: Heart,
+    label: "Ética"
+  }, {
+    icon: Award,
+    label: "Prática baseada em evidências"
+  }, {
+    icon: Users,
+    label: "Qualidade no atendimento"
+  }, {
+    icon: Target,
+    label: "Transparência nos resultados"
+  }, {
+    icon: Sparkles,
+    label: "Inovação"
+  }, {
+    icon: Eye,
+    label: "Resolutividade"
+  }];
+  return <section id="sobre" className="py-24 bg-gradient-subtle">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-4">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-4 font-sans">
             Sobre Nós
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl font-bold text-foreground mb-6 font-sans md:text-6xl">
             Conheça a Access Fisioterapia
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
@@ -73,11 +81,7 @@ const About = () => {
           {/* Image/Stats Side */}
           <div className="relative">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-elegant bg-primary/10">
-              <img
-                src={clinicInterior}
-                alt="Equipe Access Fisioterapia - Felipe, Warley e Fábio"
-                className="w-full h-full object-cover object-top"
-              />
+              <img src={clinicInterior} alt="Equipe Access Fisioterapia - Felipe, Warley e Fábio" className="w-full h-full object-cover object-top" />
             </div>
 
             {/* Floating Stats */}
@@ -99,20 +103,13 @@ const About = () => {
             Nossos Valores
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {values.map((value, index) => (
-              <div
-                key={index}
-                className="bg-background rounded-xl p-6 text-center shadow-soft hover:shadow-elegant transition-shadow duration-300 group"
-              >
+            {values.map((value, index) => <div key={index} className="bg-background rounded-xl p-6 text-center shadow-soft hover:shadow-elegant transition-shadow duration-300 group">
                 <value.icon className="w-8 h-8 mx-auto mb-3 text-primary group-hover:scale-110 transition-transform duration-300" />
                 <p className="text-sm font-medium text-foreground">{value.label}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
