@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/5531998483170"
+                  href="https://wa.me/5531984831070"
                   className="hover:text-primary transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"

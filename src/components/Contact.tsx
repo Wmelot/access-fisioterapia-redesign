@@ -90,7 +90,7 @@ const Contact = () => {
                     <Instagram className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://wa.me/5531998483170"
+                    href="https://wa.me/5531984831070"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-xl bg-green-500 flex items-center justify-center text-primary-foreground hover:bg-green-600 transition-colors"
@@ -109,7 +109,7 @@ const Contact = () => {
               asChild
             >
               <a
-                href="https://wa.me/5531998483170"
+                href="https://wa.me/5531984831070"
                 target="_blank"
                 rel="noopener noreferrer"
               >
