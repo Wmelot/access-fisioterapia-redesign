@@ -87,7 +87,7 @@ const About = () => {
             </div>
 
             <div className="absolute -top-8 -right-8 bg-primary rounded-2xl p-6 shadow-teal">
-              <p className="text-4xl font-display font-bold text-primary-foreground">10+</p>
+              <p className="text-4xl font-display font-bold text-primary-foreground">17+</p>
               <p className="text-sm text-primary-foreground/80">Anos de experiência</p>
             </div>
           </div>
