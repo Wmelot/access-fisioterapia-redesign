@@ -72,11 +72,11 @@ const About = () => {
 
           {/* Image/Stats Side */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant bg-primary/10">
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-elegant bg-primary/10">
               <img
                 src={clinicInterior}
-                alt="Clínica Access Fisioterapia - Ambiente moderno"
-                className="w-full h-full object-cover"
+                alt="Equipe Access Fisioterapia - Felipe, Warley e Fábio"
+                className="w-full h-full object-cover object-top"
               />
             </div>
 
