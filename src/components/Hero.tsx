@@ -1,37 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import heroBackground from "@/assets/hero-background.png";
-
 const Hero = () => {
-  return (
-    <section
-      id="inicio"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-    >
+  return <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
-          src={heroBackground}
-          alt="Access Fisioterapia"
-          className="w-full h-full object-cover"
-        />
+        <img src={heroBackground} alt="Access Fisioterapia" className="w-full h-full object-cover" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <p className="text-background/80 text-sm md:text-base font-medium tracking-[0.3em] uppercase mb-6 animate-fade-up">
-            Fisioterapia de Excelência
-          </p>
+          <p className="text-background/80 text-sm md:text-base font-medium tracking-[0.3em] uppercase mb-6 animate-fade-up">FISIOTERAPIA DE EXCELÊNCIA BASEADA NA MELHOR EVIDÊNCIA</p>
 
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-background leading-tight mb-6 animate-fade-up delay-100">
-            Sua Recuperação é Nossa
-            <span className="block">Prioridade</span>
+            ​
+            <span className="block">​</span>
           </h1>
 
           <p className="text-background/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up delay-200">
-            Somos uma clínica de reabilitação que oferece solução completa no
-            tratamento e prevenção das disfunções do aparelho locomotor.
+            ​
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
@@ -47,18 +35,13 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
-        <a
-          href="#sobre"
-          className="flex flex-col items-center gap-2 text-background/70 hover:text-background transition-colors"
-        >
+        <a href="#sobre" className="flex flex-col items-center gap-2 text-background/70 hover:text-background transition-colors">
           <span className="text-xs font-medium tracking-wider uppercase">
             Saiba mais
           </span>
           <ChevronDown className="w-6 h-6" />
         </a>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
