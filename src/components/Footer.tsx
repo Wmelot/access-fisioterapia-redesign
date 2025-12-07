@@ -61,7 +61,7 @@ const Footer = () => {
             <ul className="space-y-3 text-background/70">
               <li>
                 <a
-                  href="tel:+5531998483170"
+                  href="tel:+5531984831070"
                   className="hover:text-primary transition-colors"
                 >
                   (31) 99848-31070

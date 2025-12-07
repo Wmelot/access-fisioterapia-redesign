@@ -1,47 +1,52 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
-import heroBackground from "@/assets/hero-background.png";
+
 const Hero = () => {
-  return <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img src={heroBackground} alt="Access Fisioterapia" className="w-full h-full object-cover" />
+  // Número e Link do WhatsApp (Para garantir a consistência com o Header)
+  const whatsappNumber = "5531984831070"; 
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.`;
+
+  return (
+    <section 
+      id="inicio" 
+      className="relative w-full h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Imagem de Fundo (Hero-background.png) */}
+      <div 
+        className="absolute inset-0 bg-cover bg-no-repeat transition-all duration-700"
+        style={{ 
+          backgroundImage: `url('/images/hero-background.png')`,
+          // CORREÇÃO APLICADA AQUI: Garante que a imagem se adapte (cover) e centralize (center)
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center',
+          // Efeito de escurecimento para dar destaque ao texto
+          backgroundAttachment: 'fixed' 
+        }}
+      >
+        <div className="absolute inset-0 bg-primary/70 backdrop-blur-sm"></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-background/80 text-sm md:text-base font-medium tracking-[0.3em] uppercase mb-6 animate-fade-up">FISIOTERAPIA DE EXCELÊNCIA BASEADA NA MELHOR EVIDÊNCIA</p>
-
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-background leading-tight mb-6 animate-fade-up delay-100">
-            ​
-            <span className="block">​</span>
-          </h1>
-
-          <p className="text-background/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up delay-200">
-            ​
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
-            <Button variant="hero" size="xl" asChild>
-              <a href="#agendar">Agende sua Consulta</a>
-            </Button>
-            <Button variant="heroOutline" size="xl" asChild>
-              <a href="#sobre">Conheça a Access</a>
-            </Button>
-          </div>
-        </div>
+      {/* Conteúdo Principal */}
+      <div className="relative z-10 text-center text-background px-4 max-w-4xl">
+        <h1 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight animate-fade-in-up">
+          Sua Jornada de Bem-Estar Começa Aqui
+        </h1>
+        <p className="text-lg md:text-xl font-light mb-8 animate-fade-in-up delay-100">
+          Recupere seu movimento e qualidade de vida com a expertise e cuidado da Access Fisioterapia.
+        </p>
+        <Button
+          variant="hero"
+          size="xl"
+          className="shadow-xl hover:shadow-2xl animate-fade-in-up delay-200"
+          asChild
+        >
+          {/* Link para o WhatsApp */}
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            Agende sua Avaliação por WhatsApp
+          </a>
+        </Button>
       </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
-        <a href="#sobre" className="flex flex-col items-center gap-2 text-background/70 hover:text-background transition-colors">
-          <span className="text-xs font-medium tracking-wider uppercase">
-            Saiba mais
-          </span>
-          <ChevronDown className="w-6 h-6" />
-        </a>
-      </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
