@@ -7,7 +7,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // NOVO NÚMERO DO WHATSAPP (Apenas um lugar para facilitar futuras mudanças)
+  // CORREÇÃO APLICADA AQUI: O número deve ser 5531984831070
   const whatsappNumber = "5531984831070"; 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.`;
 
@@ -66,14 +66,12 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            {/* MODIFICADO: Agora usa o link do WhatsApp (wa.me) */}
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className={`flex items-center gap-2 text-sm font-medium transition-colors ${
               isScrolled ? "text-foreground" : "text-background"
             }`}>
               <Phone className="w-4 h-4" />
               (31) 98483-1070
             </a>
-            {/* MODIFICADO: O botão "Agende sua Consulta" agora aponta para o WhatsApp */}
             <Button
               variant={isScrolled ? "default" : "hero"}
               size="lg"
@@ -108,7 +106,6 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              {/* MODIFICADO: O botão do Menu Mobile agora aponta para o WhatsApp */}
               <Button variant="default" size="lg" className="mt-4" asChild>
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Agende sua Consulta</a>
               </Button>
