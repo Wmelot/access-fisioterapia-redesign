@@ -50,7 +50,7 @@ const Contact = () => {
                       Telefone / WhatsApp
                     </h4>
                     <a
-                      href="tel:+5531998483170"
+                      href="tel:+5531984831070"
                       className="text-primary hover:underline"
                     >
                       (31) 99848-31070
