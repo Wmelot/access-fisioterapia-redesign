@@ -20,57 +20,57 @@ const Team = () => {
     credentials: ["Fisioterapeuta - PUC/Minas", "Mestre em Ciências da Reabilitação - UFMG", "Pós graduado em Terapia Manual - PUC/Minas", "Especialista em Fisioterapia Traumato-ortopédica - COFFITO", "Sócio Proprietário Propulsão Palmilhas Biomecânicas"]
   }];
   return <section id="equipe" className="py-24 bg-secondary">
-      <div className="container mx-auto px-4 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-4">
-            Nossa Equipe
-          </p>
-          <h2 className="text-4xl font-bold text-foreground mb-6 font-sans md:text-6xl">
-            Profissionais Qualificados
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Nossa equipe é formada por fisioterapeutas com ampla experiência
-            clínica e formação acadêmica de excelência.
-          </p>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6" />
-        </div>
-
-        {/* Team Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {team.map((member, index) => <div key={index} className="group bg-background rounded-3xl overflow-hidden shadow-soft hover:shadow-elegant transition-all duration-300">
-              {/* Image */}
-              <div className="aspect-[4/5] overflow-hidden bg-primary/10">
-                <img src={member.image} alt={member.name} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
-              </div>
-
-              {/* Content */}
-              <div className="p-8">
-                <h3 className="text-2xl font-semibold text-foreground mb-1 font-sans">
-                  {member.name}
-                </h3>
-                <p className="text-primary font-medium mb-4">{member.role}</p>
-
-                <ul className="space-y-2">
-                  {member.credentials.map((credential, idx) => <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                      {credential}
-                    </li>)}
-                </ul>
-
-                {/* Social */}
-                <div className="flex gap-3 mt-6 pt-6 border-t border-border">
-                  <a href="https://instagram.com/accessfisio" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
-                    <Instagram className="w-4 h-4" />
-                  </a>
-                  <a href="https://www.doctoralia.com.br/clinicas/access-fisioterapia" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
-                    <Linkedin className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-            </div>)}
-        </div>
+    <div className="container mx-auto px-4 lg:px-8">
+      {/* Section Header */}
+      <div className="text-center mb-16">
+        <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-4 font-sans">
+          Nossa Equipe
+        </p>
+        <h2 className="text-4xl font-bold text-foreground mb-6 font-sans md:text-6xl">
+          Profissionais Qualificados
+        </h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Nossa equipe é formada por fisioterapeutas com ampla experiência
+          clínica e formação acadêmica de excelência.
+        </p>
+        <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6" />
       </div>
-    </section>;
+
+      {/* Team Grid */}
+      <div className="grid md:grid-cols-3 gap-8">
+        {team.map((member, index) => <div key={index} className="group bg-background rounded-3xl overflow-hidden shadow-soft hover:shadow-elegant transition-all duration-300">
+          {/* Image */}
+          <div className="aspect-[4/5] overflow-hidden bg-primary/10">
+            <img src={member.image} alt={member.name} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+          </div>
+
+          {/* Content */}
+          <div className="p-8">
+            <h3 className="text-2xl font-semibold text-foreground mb-1 font-sans">
+              {member.name}
+            </h3>
+            <p className="text-primary font-medium mb-4">{member.role}</p>
+
+            <ul className="space-y-2">
+              {member.credentials.map((credential, idx) => <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                {credential}
+              </li>)}
+            </ul>
+
+            {/* Social */}
+            <div className="flex gap-3 mt-6 pt-6 border-t border-border">
+              <a href="https://instagram.com/accessfisio" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a href="https://www.doctoralia.com.br/clinicas/access-fisioterapia" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                <Linkedin className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>)}
+      </div>
+    </div>
+  </section>;
 };
 export default Team;

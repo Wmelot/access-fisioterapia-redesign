@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Calendar, Clock, MapPin } from "lucide-react";
+import { Calendar, Clock, MapPin, Wind } from "lucide-react";
 
 const BookingWidget = () => {
   useEffect(() => {
@@ -62,7 +62,7 @@ const BookingWidget = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Horários Flexíveis</h4>
                   <p className="text-sm opacity-80">
-                    Atendimento de segunda a sexta em horários convenientes
+                    Horários de atendimento estendidos e adaptáveis, garantindo que sua saúde encontre espaço na sua rotina.
                   </p>
                 </div>
               </div>
@@ -74,7 +74,23 @@ const BookingWidget = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Localização Privilegiada</h4>
                   <p className="text-sm opacity-80">
+                    Academia Bodytech - Unidade Savassi
+                    <br />
                     R. Pernambuco, 618 - Sala 11, 3º andar - Belo Horizonte
+                    <br />
+                    Estacionamento gratuito para pacientes em atendimento
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-background/20 flex items-center justify-center flex-shrink-0">
+                  <Wind className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Ambiente Climatizado</h4>
+                  <p className="text-sm opacity-80">
+                    Ambiente climatizado para o seu conforto durante todo o tratamento.
                   </p>
                 </div>
               </div>
