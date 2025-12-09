@@ -23,6 +23,8 @@ const Footer = () => {
               e prevenção das disfunções do aparelho locomotor.
             </p>
             <p className="text-background/70 text-sm">
+              Academia Bodytech - Unidade Savassi
+              <br />
               R. Pernambuco, 618 - Sala 11, 3º andar
               <br />
               CEP 30130-156 - Belo Horizonte, MG

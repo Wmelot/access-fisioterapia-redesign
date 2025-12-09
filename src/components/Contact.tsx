@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -7,13 +7,15 @@ const Contact = () => {
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-4">
-            Contato
-          </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Entre em Contato
-          </h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+          <div className="text-center mb-16">
+            <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-4 font-sans">
+              Contato
+            </p>
+            <h2 className="text-4xl font-bold text-foreground mb-6 font-sans md:text-6xl">
+              Entre em Contato
+            </h2>
+            <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -34,6 +36,8 @@ const Contact = () => {
                       Endereço
                     </h4>
                     <p className="text-muted-foreground">
+                      Academia Bodytech - Unidade Savassi
+                      <br />
                       R. Pernambuco, 618 - Sala 11, 3º andar
                       <br />
                       CEP 30130-156 - Belo Horizonte, MG
@@ -70,6 +74,20 @@ const Contact = () => {
                       Segunda a Sexta: 7h às 20h
                       <br />
                       Sábado: 8h às 12h
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <User className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">
+                      Acessibilidade
+                    </h4>
+                    <p className="text-muted-foreground">
+                      Infraestrutura moderna e adaptada, garantindo acessibilidade e conforto para pessoas com mobilidade reduzida.
                     </p>
                   </div>
                 </div>

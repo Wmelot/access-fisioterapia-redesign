@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import HeroSection from "@/components/HeroSection";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Team from "@/components/Team";
@@ -28,7 +28,7 @@ const Index = () => {
       <div className="min-h-screen">
         <Header />
         <main>
-          <Hero />
+          <HeroSection />
           <About />
           <Services />
           <Team />
