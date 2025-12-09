@@ -21,15 +21,15 @@ const Testimonials = () => {
     professional: "Prof. Warley Oliveira",
     service: "Consulta Fisioterapia"
   }, {
-    name: "Cinthya Brito",
-    text: "Extremamente atencioso, competente, educado e pontual.",
-    professional: "Prof. Warley Oliveira",
+    name: "Ana Maria Tonucci",
+    text: "Excelente. Sabe muito bem a técnica e é muito atencioso..",
+    professional: "Dr. Felipe França Perdigão",
     service: "Consulta Fisioterapia"
   }, {
     name: "Fernando Assis Fonseca",
     text: "Warley foi muito detalhista na avaliação realizada, explicando os pontos e passando muita confiança no trabalho.",
     professional: "Prof. Warley Oliveira",
-    service: "Primeira consulta Fisioterapia"
+    service: "Consulta Fisioterapia"
   }];
   return <section id="depoimentos" className="py-24 bg-background overflow-hidden">
     <div className="container mx-auto px-4 lg:px-8">
