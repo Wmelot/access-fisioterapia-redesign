@@ -42,8 +42,12 @@ const Header = () => {
             <img
               src={logoAccess}
               alt="Access Fisioterapia"
-              className={`h-28 md:h-36 w-auto transition-all duration-300 ${isScrolled ? "" : "brightness-0 invert"
-                }`}
+              className={`h-28 md:h-36 w-auto transition-all duration-300`}
+              style={{
+                filter: isScrolled
+                  ? "hue-rotate(-6deg) saturate(0.73) brightness(1.14)" // Adjust to matching Manual Teal
+                  : "brightness(0) invert(1)"
+              }}
             />
           </a>
 

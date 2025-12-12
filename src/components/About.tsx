@@ -27,7 +27,7 @@ const About = () => {
         <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-4 font-sans">
           Sobre Nós
         </p>
-        <h2 className="text-4xl font-bold text-foreground mb-6 font-sans md:text-6xl">
+        <h2 className="text-4xl font-bold text-foreground mb-6 font-display md:text-6xl">
           Conheça a Access Fisioterapia
         </h2>
         <div className="w-24 h-1 bg-primary mx-auto rounded-full" />

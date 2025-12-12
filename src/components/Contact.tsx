@@ -11,7 +11,7 @@ const Contact = () => {
             <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-4 font-sans">
               Contato
             </p>
-            <h2 className="text-4xl font-bold text-foreground mb-6 font-sans md:text-6xl">
+            <h2 className="text-4xl font-bold text-foreground mb-6 font-display md:text-6xl">
               Entre em Contato
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full" />

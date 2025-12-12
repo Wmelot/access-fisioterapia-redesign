@@ -16,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 200 15% 15%;
 
-    /* Primary: Teal/Turquoise - Brand color */
-    --primary: 172 52% 57%;
+    /* Primary: Brand Teal #85C9B9 */
+    --primary: 166 38% 65%;
     --primary-foreground: 0 0% 100%;
     --primary-light: 174 58% 70%;
     --primary-dark: 174 58% 40%;
@@ -30,9 +30,14 @@
     --muted: 200 10% 96%;
     --muted-foreground: 200 10% 45%;
 
-    /* Accent: Golden/warm tone for contrast */
-    --accent: 38 70% 55%;
+    /* Accent: Brand Salmon #F19092 */
+    --accent: 359 78% 75%;
     --accent-foreground: 0 0% 100%;
+
+    /* Brand Manual Extras */
+    --brand-blue: 200 46% 84%;
+    --brand-lavender: 310 39% 82%;
+    --brand-salmon: 359 78% 75%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
@@ -44,7 +49,7 @@
     --radius: 0.75rem;
 
     /* Custom design tokens */
-    --teal: 172 52% 57%;
+    --teal: 166 38% 65%;
     --teal-light: 174 58% 92%;
     --teal-dark: 174 58% 35%;
     --cream: 40 30% 97%;
@@ -52,7 +57,7 @@
     --warm-gray: 200 10% 60%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(172, 52%, 57%) 0%, hsl(172, 52%, 45%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(166, 38%, 65%) 0%, hsl(166, 38%, 55%) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(174, 58%, 97%) 100%);
     --gradient-overlay: linear-gradient(180deg, transparent 0%, hsla(200, 15%, 15%, 0.7) 100%);
 
@@ -126,10 +131,15 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Playfair Display', serif;
   }
 }
@@ -140,7 +150,7 @@
   }
 
   .font-body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   }
 
   .text-gradient {
@@ -182,17 +192,32 @@
   }
 
   /* Stagger delays */
-  .delay-100 { animation-delay: 100ms; }
-  .delay-200 { animation-delay: 200ms; }
-  .delay-300 { animation-delay: 300ms; }
-  .delay-400 { animation-delay: 400ms; }
-  .delay-500 { animation-delay: 500ms; }
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .delay-500 {
+    animation-delay: 500ms;
+  }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -203,6 +228,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -214,6 +240,7 @@
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -225,6 +252,7 @@
     opacity: 0;
     transform: translateX(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);

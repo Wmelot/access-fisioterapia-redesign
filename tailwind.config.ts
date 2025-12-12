@@ -15,7 +15,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
         display: ['Playfair Display', 'serif'],
       },
       colors: {
@@ -72,6 +72,9 @@ export default {
         cream: "hsl(var(--cream))",
         charcoal: "hsl(var(--charcoal))",
         "warm-gray": "hsl(var(--warm-gray))",
+        "brand-blue": "hsl(var(--brand-blue))",
+        "brand-lavender": "hsl(var(--brand-lavender))",
+        "brand-salmon": "hsl(var(--brand-salmon))",
       },
       borderRadius: {
         lg: "var(--radius)",

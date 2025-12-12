@@ -38,7 +38,7 @@ const Testimonials = () => {
         <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-4 font-sans">
           Depoimentos
         </p>
-        <h2 className="text-4xl font-bold text-foreground mb-6 font-sans md:text-6xl">
+        <h2 className="text-4xl font-bold text-foreground mb-6 font-display md:text-6xl">
           O Que Nossos Pacientes Dizem
         </h2>
         <div className="flex items-center justify-center gap-2 mb-4">
