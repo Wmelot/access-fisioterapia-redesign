@@ -10,28 +10,28 @@ const Team = () => {
     role: "Fisioterapeuta",
     image: teamFabio,
     instagram: "https://www.instagram.com/fabiocardoso8?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-    imagePosition: "object-[center_15%]",
+    imagePosition: "object-top",
     credentials: ["Fisioterapeuta - Instituto Metodista Izabella Hendrix", "Pós Graduado em Ortopedia Traumatologia e Esportes - FCMMG", "Pós graduado em Terapia Manual - PUC/Minas", "Formação em Síndrome de Dominância Muscular - NEF"]
   }, {
     name: "Felipe Perdigão",
     role: "Fisioterapeuta",
     image: teamFelipe,
     instagram: "https://www.instagram.com/felipeperdigaofisio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-    imagePosition: "object-[center_15%]",
+    imagePosition: "object-top",
     credentials: ["Fisioterapeuta - PUC/Minas", "Pós graduado em Terapia Manual - PUC/Minas", "Especialista em Fisioterapia Esportiva - COFFITO", "Experiência em ortopedia, traumatologia, esporte e neurologia"]
   }, {
     name: "Warley Oliveira",
     role: "Fisioterapeuta",
     image: teamWarley,
     instagram: "https://www.instagram.com/wmeloto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-    imagePosition: "object-[center_15%]",
+    imagePosition: "object-top",
     credentials: ["Fisioterapeuta - PUC/Minas", "Mestre em Ciências da Reabilitação - UFMG", "Pós graduado em Terapia Manual - PUC/Minas", "Especialista em Fisioterapia Traumato-ortopédica - COFFITO", "Sócio Proprietário Propulsão Palmilhas Biomecânicas"]
   }, {
     name: "Rayane Vilela",
     role: "Fisioterapeuta Pélvica",
     image: teamRayane,
     instagram: "https://www.instagram.com/rayvilelafisio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-    imagePosition: "object-top",
+    imagePosition: "object-[center_35%]",
     credentials: ["Fisioterapeuta - PUC/Minas", "Pós-graduação em Fisioterapia Pélvica - Ciclos", "Formação em Esporte e Fitness (Austrália)", "Formação em Hipopressivo - Marcel Caufriez (Espanha)", "Doula pelo Instituto Coletivo Gesta (Rio de Janeiro)"]
   }];
 
@@ -60,7 +60,7 @@ const Team = () => {
             <img
               src={member.image}
               alt={member.name}
-              className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${member.imagePosition}`}
+              className={`w-full h-full object-cover group-hover:scale-105 transition-all duration-500 grayscale group-hover:grayscale-0 ${member.imagePosition}`}
             />
           </div>
 
