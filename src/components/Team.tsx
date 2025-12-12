@@ -31,7 +31,7 @@ const Team = () => {
     role: "Fisioterapeuta Pélvica",
     image: teamRayane,
     instagram: "https://www.instagram.com/rayvilelafisio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-    imagePosition: "object-[center_35%]",
+    imagePosition: "object-top",
     credentials: ["Fisioterapeuta - PUC/Minas", "Pós-graduação em Fisioterapia Pélvica - Ciclos", "Formação em Esporte e Fitness (Austrália)", "Formação em Hipopressivo - Marcel Caufriez (Espanha)", "Doula pelo Instituto Coletivo Gesta (Rio de Janeiro)"]
   }];
 
