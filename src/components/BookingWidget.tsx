@@ -5,11 +5,11 @@ const BookingWidget = () => {
   useEffect(() => {
     // Load Doctoralia widget script
     const script = document.createElement("script");
-    script.src = "//platform.docplanner.com/js/widget.js";
-    script.id = "zl-widget-s";
+    script.src = "https://www.doctoralia.com.br/platform/js/widget.js";
+    script.id = "zl-facility-widget";
     script.async = true;
 
-    if (!document.getElementById("zl-widget-s")) {
+    if (!document.getElementById("zl-facility-widget")) {
       document.body.appendChild(script);
     }
 
@@ -111,13 +111,11 @@ const BookingWidget = () => {
             {/* Doctoralia Widget Embed */}
             <div className="flex justify-center">
               <a
-                className="zl-facility-url"
                 href="https://www.doctoralia.com.br/clinicas/access-fisioterapia"
+                data-zl-widget-facility="access-fisioterapia"
                 rel="nofollow"
-                data-zlw-facility="access-fisioterapia"
-                data-zlw-type="facility-big-with-saas-only"
-                data-zlw-saas-only="true"
-                data-zlw-a11y-title="Widget de marcação de consultas médicas"
+                data-placement="inline"
+                data-zlw-type="facility-calendar-listing-with-saas-only"
               >
                 Access Fisioterapia
               </a>

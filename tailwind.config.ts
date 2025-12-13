@@ -106,7 +106,7 @@ export default {
         "pulse-soft": "pulse-soft 3s ease-in-out infinite",
       },
       boxShadow: {
-        'teal': '0 8px 32px hsla(174, 58%, 56%, 0.25)',
+        'teal': '0 8px 32px hsla(167, 38%, 65%, 0.25)',
         'elegant': '0 8px 32px hsla(200, 15%, 15%, 0.12)',
         'soft': '0 4px 16px hsla(200, 15%, 15%, 0.08)',
       },

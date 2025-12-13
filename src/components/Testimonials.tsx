@@ -1,5 +1,16 @@
+import { useEffect } from "react";
 import { Star, Quote } from "lucide-react";
 const Testimonials = () => {
+  useEffect(() => {
+    const scriptId = "zl-widget-s";
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement("script");
+      script.id = scriptId;
+      script.src = "//platform.docplanner.com/js/widget.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
   const testimonials = [{
     name: "Fernanda",
     text: "Achei um excelente profissional! Muito educado e minucioso na avaliação.",
@@ -96,12 +107,15 @@ const Testimonials = () => {
 
         <div className="mt-4">
           <a
-            href="https://www.doctoralia.com.br/clinicas/access-fisioterapia?saasonly=true&utm_id=120242&utm_source=widget-facility-120242&utm_medium=facility-big&utm_campaign=&utm_content=#highlight-calendar"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary hover:text-primary-dark font-medium underline underline-offset-4 transition-colors"
+            className="zl-facility-url text-primary hover:text-primary-dark font-medium underline underline-offset-4 transition-colors"
+            href="https://www.doctoralia.com.br/clinicas/access-fisioterapia"
+            rel="nofollow"
+            data-zlw-facility="access-fisioterapia"
+            data-zlw-type="facility-button-with-saas-only"
+            data-zlw-saas-only="true"
+            data-zlw-a11y-title="Widget de marcação de consultas médicas"
           >
-            Verifique todas as opiniões
+            Access Fisioterapia
           </a>
         </div>
       </div>
