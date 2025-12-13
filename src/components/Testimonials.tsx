@@ -55,9 +55,19 @@ const Testimonials = () => {
         <div className="flex items-center justify-center gap-2 mb-4">
           {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 fill-primary text-primary" />)}
         </div>
-        <p className="text-muted-foreground">
-          Mais de <span className="font-semibold text-primary">130 avaliações</span> positivas no Doctoralia
-        </p>
+        <div className="flex justify-center mt-2">
+          <a
+            className="zl-facility-url"
+            href="https://www.doctoralia.com.br/clinicas/access-fisioterapia"
+            rel="nofollow"
+            data-zlw-facility="access-fisioterapia"
+            data-zlw-type="certificate"
+            data-zlw-saas-only="true"
+            data-zlw-a11y-title="Widget de marcação de consultas médicas"
+          >
+            Access Fisioterapia
+          </a>
+        </div>
         <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6" />
       </div>
 
