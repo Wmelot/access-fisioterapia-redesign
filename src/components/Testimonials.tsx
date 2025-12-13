@@ -115,7 +115,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className="mt-4">
+        <div className="flex justify-center mt-4">
           <a
             className="zl-facility-url text-primary hover:text-primary-dark font-medium underline underline-offset-4 transition-colors"
             href="https://www.doctoralia.com.br/clinicas/access-fisioterapia"
