@@ -124,7 +124,7 @@
     filter: hue-rotate(-45deg) saturate(0.8);
   }
 }
-}
+
 
 @layer base {
   * {
