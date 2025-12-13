@@ -120,8 +120,10 @@
   }
 
   /* Doctoralia Widget Customization */
-  iframe[src*="doctoralia"] {
-    filter: hue-rotate(-45deg) saturate(0.8);
+  iframe[src*="doctoralia"],
+  iframe[src*="docplanner"] {
+    /* Attempt to match Soft Teal #84c8b9 by desaturating and brightening the default vivid teal */
+    filter: saturate(0.6) brightness(1.1) hue-rotate(-5deg);
   }
 }
 
