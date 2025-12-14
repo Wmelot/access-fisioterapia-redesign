@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import logoTransparent from "@/assets/logo-access-transparent.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,13 +11,12 @@ const Footer = () => {
         <div className="py-16 grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="font-display text-3xl font-bold text-primary">
-                ACCESS
-              </span>
-              <span className="text-sm font-medium tracking-[0.2em] uppercase text-background/60">
-                Fisioterapia
-              </span>
+            <div className="mb-6">
+              <img
+                src={logoTransparent}
+                alt="Access Fisioterapia"
+                className="h-12 w-auto opacity-90"
+              />
             </div>
             <p className="text-background/70 leading-relaxed mb-6 max-w-md">
               Clínica de reabilitação que oferece solução completa no tratamento
