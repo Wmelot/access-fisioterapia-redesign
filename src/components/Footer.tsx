@@ -15,7 +15,7 @@ const Footer = () => {
               <img
                 src={logoTransparent}
                 alt="Access Fisioterapia"
-                className="h-12 w-auto opacity-90"
+                className="h-28 w-auto opacity-90"
               />
             </div>
             <p className="text-background/70 leading-relaxed mb-6 max-w-md">
