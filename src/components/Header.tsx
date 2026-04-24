@@ -9,7 +9,7 @@ const Header = () => {
 
   // CORREÇÃO APLICADA AQUI: O número deve ser 5531984831070
   const whatsappNumber = "5531984831070";
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.`;
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida.`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,7 +77,7 @@ const Header = () => {
               size="lg"
               asChild
             >
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Agende sua Consulta</a>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Tire suas Dúvidas</a>
             </Button>
           </div>
 
@@ -106,7 +106,7 @@ const Header = () => {
                 </a>
               ))}
               <Button variant="default" size="lg" className="mt-4" asChild>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Agende sua Consulta</a>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Tire suas Dúvidas</a>
               </Button>
             </nav>
           </div>
