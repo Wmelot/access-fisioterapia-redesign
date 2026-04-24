@@ -89,16 +89,6 @@ const Footer = () => {
                   @accessfisio
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://www.doctoralia.com.br/clinicas/access-fisioterapia"
-                  className="hover:text-primary transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Doctoralia
-                </a>
-              </li>
             </ul>
           </div>
         </div>

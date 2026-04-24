@@ -86,7 +86,7 @@ const Services = () => {
       {/* CTA */}
       <div className="text-center mt-16">
         <Button variant="default" size="xl" asChild>
-          <a href="https://www.doctoralia.com.br/clinicas/access-fisioterapia" target="_blank" rel="noopener noreferrer">Agende sua Avaliação</a>
+          <a href="https://axiom-production.vercel.app/book/access-fisioterapia" target="_blank" rel="noopener noreferrer">Agende sua Avaliação</a>
         </Button>
       </div>
     </div>

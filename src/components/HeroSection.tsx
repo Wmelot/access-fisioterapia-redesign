@@ -3,8 +3,8 @@ import logoAccess from "@/assets/logo-access-final-v2.png";
 import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
-  // Link direto para a avaliação no Doctoralia
-  const bookingLink = "https://www.doctoralia.com.br/clinicas/access-fisioterapia";
+  // Link direto para o agendamento no sistema Axiom
+  const bookingLink = "https://axiom-production.vercel.app/book/access-fisioterapia";
 
   return (
     <section

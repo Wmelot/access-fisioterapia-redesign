@@ -1,23 +1,9 @@
-import { useEffect } from "react";
 import { Calendar, Clock, MapPin, Wind } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const bookingLink = "https://axiom-production.vercel.app/book/access-fisioterapia";
 
 const BookingWidget = () => {
-  useEffect(() => {
-    // Load Doctoralia widget script
-    const script = document.createElement("script");
-    script.src = "https://www.doctoralia.com.br/platform/js/widget.js";
-    script.id = "zl-facility-widget";
-    script.async = true;
-
-    if (!document.getElementById("zl-facility-widget")) {
-      document.body.appendChild(script);
-    }
-
-    return () => {
-      // Cleanup if needed
-    };
-  }, []);
-
   return (
     <section id="agendar" className="py-24 bg-primary relative overflow-hidden">
       {/* Background Elements */}
@@ -50,7 +36,7 @@ const BookingWidget = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Agendamento Online</h4>
                   <p className="text-sm opacity-80">
-                    Escolha o melhor horário diretamente pelo Doctoralia
+                    Escolha o melhor horário online em poucos cliques
                   </p>
                 </div>
               </div>
@@ -97,28 +83,27 @@ const BookingWidget = () => {
             </div>
           </div>
 
-          {/* Doctoralia Widget */}
+          {/* Booking CTA */}
           <div className="bg-background rounded-3xl p-8 shadow-elegant">
             <div className="text-center mb-6">
               <h3 className="font-display text-2xl font-semibold text-foreground mb-2">
-                Agende pelo Doctoralia
+                Agende sua Consulta
               </h3>
               <p className="text-muted-foreground text-sm">
                 Clique abaixo para ver horários disponíveis
               </p>
             </div>
 
-            {/* Doctoralia Widget Embed */}
             <div className="flex justify-center">
-              <a
-                href="https://www.doctoralia.com.br/clinicas/access-fisioterapia"
-                data-zl-widget-facility="access-fisioterapia"
-                rel="nofollow"
-                data-placement="inline"
-                data-zlw-type="facility-calendar-listing-with-saas-only"
-              >
-                Access Fisioterapia
-              </a>
+              <Button variant="default" size="xl" asChild>
+                <a
+                  href={bookingLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Agende sua Consulta
+                </a>
+              </Button>
             </div>
 
             <div className="mt-6 pt-6 border-t border-border text-center">

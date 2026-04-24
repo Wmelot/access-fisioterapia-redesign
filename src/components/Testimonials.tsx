@@ -1,16 +1,9 @@
-import { useEffect } from "react";
 import { Star, Quote } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const bookingLink = "https://axiom-production.vercel.app/book/access-fisioterapia";
+
 const Testimonials = () => {
-  useEffect(() => {
-    const scriptId = "zl-widget-s";
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement("script");
-      script.id = scriptId;
-      script.src = "//platform.docplanner.com/js/widget.js";
-      script.async = true;
-      document.body.appendChild(script);
-    }
-  }, []);
   const testimonials = [{
     name: "Fernanda",
     text: "Achei um excelente profissional! Muito educado e minucioso na avaliação.",
@@ -54,19 +47,6 @@ const Testimonials = () => {
         </h2>
         <div className="flex items-center justify-center gap-2 mb-4">
           {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 fill-primary text-primary" />)}
-        </div>
-        <div className="flex justify-center mt-2">
-          <a
-            className="zl-facility-url"
-            href="https://www.doctoralia.com.br/clinicas/access-fisioterapia"
-            rel="nofollow"
-            data-zlw-facility="access-fisioterapia"
-            data-zlw-type="certificate"
-            data-zlw-saas-only="true"
-            data-zlw-a11y-title="Widget de marcação de consultas médicas"
-          >
-            Access Fisioterapia
-          </a>
         </div>
         <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6" />
       </div>
@@ -116,17 +96,15 @@ const Testimonials = () => {
         </div>
 
         <div className="flex justify-center mt-4">
-          <a
-            className="zl-facility-url inline-flex items-center justify-center rounded-xl text-lg font-medium h-14 px-10 bg-primary text-primary-foreground hover:bg-primary-dark shadow-md transition-colors"
-            href="https://www.doctoralia.com.br/clinicas/access-fisioterapia"
-            rel="nofollow"
-            data-zlw-facility="access-fisioterapia"
-            data-zlw-type="facility-button-with-saas-only"
-            data-zlw-saas-only="true"
-            data-zlw-a11y-title="Widget de marcação de consultas médicas"
-          >
-            Access Fisioterapia
-          </a>
+          <Button variant="default" size="xl" asChild>
+            <a
+              href={bookingLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Agende sua Consulta
+            </a>
+          </Button>
         </div>
       </div>
     </div>
