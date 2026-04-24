@@ -4,7 +4,7 @@ import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
   // Link direto para o agendamento no sistema Axiom
-  const bookingLink = "https://axiom-production.vercel.app/book/access-fisioterapia";
+  const bookingLink = "https://agenda.accessfisio.com.br/book/access-fisioterapia";
 
   return (
     <section

@@ -1,7 +1,7 @@
 import { Star, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const bookingLink = "https://axiom-production.vercel.app/book/access-fisioterapia";
+const bookingLink = "https://agenda.accessfisio.com.br/book/access-fisioterapia";
 
 const Testimonials = () => {
   const testimonials = [{
