@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="relative w-full min-h-screen flex items-center justify-center py-20 overflow-hidden"
+      className="relative w-full min-h-screen flex items-center justify-center pt-32 md:pt-40 pb-20 overflow-hidden"
     >
       {/* Background photo */}
       <img
@@ -27,7 +27,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-background px-4 max-w-5xl flex flex-col items-center">
 
         {/* Tagline - Agora ACIMA da logo */}
-        <p className="text-xl md:text-2xl font-medium tracking-[0.2em] uppercase mb-1 opacity-90">
+        <p className="text-xl md:text-2xl font-medium tracking-[0.2em] uppercase mb-1 opacity-90 drop-shadow-md">
           Fisioterapia de excelência baseada na melhor evidência
         </p>
 
@@ -35,7 +35,7 @@ const HeroSection = () => {
         <img
           src={logoAccess}
           alt="Access Fisioterapia"
-          className="w-full h-auto max-h-[50vh] md:max-h-[65vh] mb-2 object-contain"
+          className="w-full h-auto max-h-[55vh] md:max-h-[70vh] mb-2 object-contain"
         />
 
         {/* Botoes - Agora ABAIXO da logo */}
