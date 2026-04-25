@@ -1,5 +1,6 @@
 import { Calendar, Clock, MapPin, Wind } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import bookingCard from "@/assets/photos/booking-card.webp";
 
 const bookingLink = "https://agenda.accessfisio.com.br/book/access-fisioterapia";
 
@@ -84,38 +85,48 @@ const BookingWidget = () => {
           </div>
 
           {/* Booking CTA */}
-          <div className="bg-background rounded-3xl p-8 shadow-elegant">
-            <div className="text-center mb-6">
-              <h3 className="font-display text-2xl font-semibold text-foreground mb-2">
-                Agende sua Consulta
-              </h3>
-              <p className="text-muted-foreground text-sm">
-                Clique abaixo para ver horários disponíveis
-              </p>
+          <div className="bg-background rounded-3xl overflow-hidden shadow-elegant">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={bookingCard}
+                alt="Sessão de terapia manual na Access Fisioterapia"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
-
-            <div className="flex justify-center">
-              <Button variant="default" size="xl" asChild>
-                <a
-                  href={bookingLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+            <div className="p-8">
+              <div className="text-center mb-6">
+                <h3 className="font-display text-2xl font-semibold text-foreground mb-2">
                   Agende sua Consulta
-                </a>
-              </Button>
-            </div>
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  Clique abaixo para ver horários disponíveis
+                </p>
+              </div>
 
-            <div className="mt-6 pt-6 border-t border-border text-center">
-              <p className="text-sm text-muted-foreground">
-                Ou ligue para{" "}
-                <a
-                  href="tel:+5531984831070"
-                  className="text-primary font-semibold hover:underline"
-                >
-                  (31) 98483-1070
-                </a>
-              </p>
+              <div className="flex justify-center">
+                <Button variant="default" size="xl" asChild>
+                  <a
+                    href={bookingLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Agende sua Consulta
+                  </a>
+                </Button>
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-border text-center">
+                <p className="text-sm text-muted-foreground">
+                  Ou ligue para{" "}
+                  <a
+                    href="tel:+5531984831070"
+                    className="text-primary font-semibold hover:underline"
+                  >
+                    (31) 98483-1070
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
