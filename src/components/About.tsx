@@ -1,5 +1,5 @@
 import { Target, Eye, Heart, Award, Users, Sparkles } from "lucide-react";
-import clinicInterior from "@/assets/clinic-interior.jpg";
+import aboutClinic from "@/assets/photos/about-clinic.webp";
 const About = () => {
   const values = [{
     icon: Heart,
@@ -81,7 +81,7 @@ const About = () => {
         {/* Image/Stats Side */}
         <div className="relative">
           <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-elegant bg-primary/10">
-            <img src={clinicInterior} alt="Equipe Access Fisioterapia - Felipe, Warley e Fábio" className="w-full h-full object-cover object-top" />
+            <img src={aboutClinic} alt="Fisioterapeuta orientando paciente em equipamento de reabilitação na Access Fisioterapia" className="w-full h-full object-cover" />
           </div>
 
           {/* Floating Stats */}
