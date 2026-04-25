@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import logoAccess from "@/assets/logo-access-final-v2.png";
+import heroAttendance from "@/assets/photos/hero-attendance.webp";
 import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
@@ -9,10 +10,18 @@ const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="relative w-full min-h-screen flex items-center justify-center py-20"
+      className="relative w-full min-h-screen flex items-center justify-center py-20 overflow-hidden"
     >
-      {/* Solid Background matching Logo Color */}
-      <div className="absolute inset-0 bg-[#59cbbb]"></div>
+      {/* Background photo */}
+      <img
+        src={heroAttendance}
+        alt="Fisioterapeuta acompanhando paciente em analise da marcha na esteira"
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+        fetchPriority="high"
+      />
+      {/* Teal overlay to preserve brand identity and ensure text contrast */}
+      <div className="absolute inset-0 bg-[#59cbbb]/85"></div>
 
       {/* Conteúdo Principal */}
       <div className="relative z-10 text-center text-background px-4 max-w-5xl flex flex-col items-center">
