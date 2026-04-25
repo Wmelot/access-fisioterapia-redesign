@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw photos pre-curation (otimizadas vao para src/assets/photos/)
+src/assets/Fotos Access/
