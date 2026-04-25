@@ -5,24 +5,24 @@ const bookingLink = "https://agenda.accessfisio.com.br/book/access-fisioterapia"
 
 const Testimonials = () => {
   const testimonials = [{
-    name: "Fernanda",
-    text: "Achei um excelente profissional! Muito educado e minucioso na avaliação.",
-    professional: "Prof. Warley Oliveira",
-    service: "Avaliação para confecção de palmilhas ortopédicas"
+    name: "Arthur José Fernandes Braz",
+    text: "Excelente profissional, com quem já trabalho há mais de 15 anos. Competente, atualizado com as melhores técnicas, grande conhecimento técnico e pontual. Altamente recomendável!",
+    professional: "Dr. Fábio Cardoso",
+    service: "Consulta Fisioterapia"
   }, {
     name: "Lucilene Almeida",
     text: "Consulta excelente, foi bem demorada, avaliação perfeita, não ficou nenhuma dúvida.",
-    professional: "Prof. Warley Oliveira",
+    professional: "Prof. Msc. Warley Oliveira",
     service: "Avaliação para confecção de palmilhas ortopédicas"
   }, {
     name: "Pedro Ladeira",
     text: "Ótima sessão! Profissional competente e atencioso. Gostei muito do tratamento e recomendo.",
-    professional: "Prof. Warley Oliveira",
+    professional: "Prof. Msc. Warley Oliveira",
     service: "Consulta Fisioterapia"
   }, {
     name: "Fernanda Faria",
     text: "Atencioso e técnico. Atendimento especializado. Dedicação precisa e individualizada na minha recuperação.",
-    professional: "Prof. Warley Oliveira",
+    professional: "Prof. Msc. Warley Oliveira",
     service: "Consulta Fisioterapia"
   }, {
     name: "Ana Maria Tonucci",
@@ -32,7 +32,7 @@ const Testimonials = () => {
   }, {
     name: "Fernando Assis Fonseca",
     text: "Warley foi muito detalhista na avaliação realizada, explicando os pontos e passando muita confiança no trabalho.",
-    professional: "Prof. Warley Oliveira",
+    professional: "Prof. Msc. Warley Oliveira",
     service: "Consulta Fisioterapia"
   }];
   return <section id="depoimentos" className="py-24 bg-background overflow-hidden">
