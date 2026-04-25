@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logoAccess from "@/assets/logo-access-final-v2.png";
+import logoAccess from "@/assets/logo-access-transparent.png";
 import heroAttendance from "@/assets/photos/hero-attendance.webp";
 import { ChevronDown } from "lucide-react";
 
