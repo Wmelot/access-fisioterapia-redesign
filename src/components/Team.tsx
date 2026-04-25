@@ -2,7 +2,7 @@ import { Instagram } from "lucide-react";
 import teamFabio from "@/assets/photos/team-fabio.webp";
 import teamFelipe from "@/assets/photos/team-felipe.webp";
 import teamWarley from "@/assets/photos/team-warley.webp";
-import teamRayane from "@/assets/team-rayane.png";
+import teamRayane from "@/assets/photos/team-rayane.webp";
 
 const Team = () => {
   const team = [{
