@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import logoAccess from "@/assets/logo-access-transparent.png";
-import heroAttendance from "@/assets/photos/hero-attendance.webp";
+import heroGaitAnalysis from "@/assets/photos/hero-gait-analysis.webp";
 import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
@@ -14,8 +14,8 @@ const HeroSection = () => {
     >
       {/* Background photo */}
       <img
-        src={heroAttendance}
-        alt="Fisioterapeuta acompanhando paciente em analise da marcha na esteira"
+        src={heroGaitAnalysis}
+        alt="Fisioterapeuta Warley conduzindo analise biomecanica da marcha com gimbal enquanto paciente corre na esteira"
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"
         fetchPriority="high"
@@ -65,7 +65,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce cursor-pointer opacity-80 hover:opacity-100 transition-opacity">
+      <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce cursor-pointer opacity-80 hover:opacity-100 transition-opacity">
         <span className="text-[10px] md:text-xs font-medium tracking-[0.2em] uppercase text-background/80">
           Saiba Mais
         </span>

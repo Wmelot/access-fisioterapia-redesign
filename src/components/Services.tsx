@@ -68,7 +68,7 @@ const Services = () => {
         {services.map((service, index) => <div key={index} className={`group relative rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 ${service.highlight ? `${service.colorClass} ${service.textClass} shadow-lg` : "bg-secondary hover:shadow-elegant"}`}>
           <service.icon className={`w-12 h-12 mb-6 ${service.highlight ? "text-current opacity-80" : "text-primary"}`} />
 
-          <h3 className="text-xl font-bold mb-4 font-display">
+          <h3 className="text-xl font-semibold mb-4 font-display">
             {service.title}
           </h3>
 

@@ -20,7 +20,7 @@ const BookingWidget = () => {
             <p className="font-medium tracking-[0.2em] uppercase text-sm mb-4 opacity-80">
               Agende sua Consulta
             </p>
-            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
               Comece Sua Recuperação Hoje
             </h2>
             <p className="text-lg opacity-90 mb-10 leading-relaxed">
@@ -35,7 +35,7 @@ const BookingWidget = () => {
                   <Calendar className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Agendamento Online</h4>
+                  <h4 className="font-display text-xl font-semibold mb-1">Agendamento Online</h4>
                   <p className="text-sm opacity-80">
                     Escolha o melhor horário online em poucos cliques
                   </p>
@@ -47,7 +47,7 @@ const BookingWidget = () => {
                   <Clock className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Horários Flexíveis</h4>
+                  <h4 className="font-display text-xl font-semibold mb-1">Horários Flexíveis</h4>
                   <p className="text-sm opacity-80">
                     Horários de atendimento estendidos e adaptáveis, garantindo que sua saúde encontre espaço na sua rotina.
                   </p>
@@ -59,7 +59,7 @@ const BookingWidget = () => {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Localização Privilegiada</h4>
+                  <h4 className="font-display text-xl font-semibold mb-1">Localização Privilegiada</h4>
                   <p className="text-sm opacity-80">
                     Academia Bodytech - Unidade Savassi
                     <br />
@@ -75,7 +75,7 @@ const BookingWidget = () => {
                   <Wind className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Ambiente Climatizado</h4>
+                  <h4 className="font-display text-xl font-semibold mb-1">Ambiente Climatizado</h4>
                   <p className="text-sm opacity-80">
                     Ambiente climatizado para o seu conforto durante todo o tratamento.
                   </p>
